@@ -1,0 +1,5 @@
+const CART_ACTION_TYPES = {
+    CART_HIDDEN: 'CART_HIDDEN',
+    ADD_ITEM: 'ADD_ITEM'
+}
+export default CART_ACTION_TYPES;
