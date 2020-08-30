@@ -5,6 +5,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import HomePage from './pages/homePage/homePage.component';
 import Shop from './pages/shop-page/shop-page.component';
 import SignInAndSignUpPage from './pages/signIn-and-signUp/signIn-and-signUp';
+import CheckoutPage from './pages/checkout/checkout';
 //components
 import Header from './components/header/header';
 //firebase
@@ -57,6 +58,7 @@ class App extends React.Component {
             <SignInAndSignUpPage />
            } 
           />
+           <Route exact path='/checkout' component={CheckoutPage} />
         </Switch>
   
       </div>
