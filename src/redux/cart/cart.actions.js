@@ -1,20 +1,20 @@
-import CART_ACTION_TYPES from './cart.types';
+import CartActionTypes from './cart.types';
 
-export const setCartHidden = () => ({
-    type: CART_ACTION_TYPES.CART_HIDDEN
-})
+export const toggleCartHidden = () => ({
+  type: CartActionTypes.TOGGLE_CART_HIDDEN
+});
 
-export const addItemtoCart = item => ({
-    type: CART_ACTION_TYPES.ADD_ITEM,
-    pyload: item
-})
+export const addItem = item => ({
+  type: CartActionTypes.ADD_ITEM,
+  payload: item
+});
 
 export const removeItem = item => ({
-    type: CART_ACTION_TYPES.REMOVE_ITEM,
-    pyload: item
-})
+  type: CartActionTypes.REMOVE_ITEM,
+  payload: item
+});
 
-export const clearItem = item => ({
-   type: CART_ACTION_TYPES.CLEAR_ITEM,
-   pyload: item
-})
+export const clearItemFromCart = item => ({
+  type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+  payload: item
+});
